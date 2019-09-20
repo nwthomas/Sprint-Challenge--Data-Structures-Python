@@ -13,7 +13,6 @@ names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 # NORMAL CODE FOR THIS ASSIGNMENT
-# This solution is more efficient but uses a class-based BST
 # duplicates = []
 # bst = BinarySearchTree(names_1[0])
 # for i in range(1, len(names_1)):
@@ -24,7 +23,6 @@ f.close()
 #         duplicates.append(name)
 
 # STRETCH CODE FOR THIS ASSIGNMENT
-# This solution is less efficient but solely uses a list as requested
 duplicates = []
 l = []
 for name1 in names_1:
