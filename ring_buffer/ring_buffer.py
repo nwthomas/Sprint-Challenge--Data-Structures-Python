@@ -11,8 +11,4 @@ class RingBuffer:
             self.current = 0
 
     def get(self):
-        final = []
-        for val in self.storage:
-            if val:
-                final.append(val)
-        return final
+        return [i for i in self.storage if i is not None]

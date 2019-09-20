@@ -24,14 +24,10 @@ f.close()
 
 # STRETCH CODE FOR THIS ASSIGNMENT
 duplicates = []
-l = []
-for name1 in names_1:
-    l.append(name1)
-
-l.sort()
+names_1.sort()
 
 for name2 in names_2:
-    if binary_search(l, name2) == 1:
+    if binary_search(names_1, name2) == 1:
         duplicates.append(name2)
 
 
